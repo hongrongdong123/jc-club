@@ -48,21 +48,6 @@
         </dependency>
     </dependencies>
 
-<!--    <build>-->
-<!--        <finalName>${project.artifactId}</finalName>-->
-<!--        &lt;!&ndash;打包成jar包时的名字&ndash;&gt;-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                <version>3.0.2</version>-->
-<!--                <configuration>-->
-<!--                    <skip>true</skip>-->
-<!--                    <mainClass>com.hrd.subject.SubjectApplication</mainClass>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
 
     <build>
         <finalName>${project.artifactId}</finalName>
