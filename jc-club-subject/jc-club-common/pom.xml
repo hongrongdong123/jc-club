@@ -11,6 +11,13 @@
 
     <groupId>com.hrd.subject</groupId>
     <artifactId>jc-club-common</artifactId>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
 
     <dependencies>
         <!--lombok必须放在mapstruct前，因为mapstruct使用get、set方法需要lombok先生成-->

@@ -16,4 +16,6 @@ public interface SubjectLabelConverter {
     SubjectLabel convertBoToLabel(SubjectLabelBO subjectLabelBO);
 
     List<SubjectLabelBO> convertToBoLabelList(List<SubjectLabel> subjectLabelList);
+
+    List<SubjectLabelBO> convertLabelToBoList(List<SubjectLabel> labelList);
 }

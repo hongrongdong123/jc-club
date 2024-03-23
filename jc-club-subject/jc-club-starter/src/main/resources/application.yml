@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     username: root
-    password: 123456
+    password: lalaha8184
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://116.198.40.220:3306/jc-club?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://localhost:3306/jc-club?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 20
@@ -27,3 +27,7 @@ spring:
           enabled: true
 logging:
   config: classpath:log4j2-spring.xml
+
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
