@@ -12,3 +12,6 @@ spring:
 #        namespace:
         file-extension: yaml
 
+      discovery:
+        enabled: true
+        server-addr: 116.198.40.220:8848

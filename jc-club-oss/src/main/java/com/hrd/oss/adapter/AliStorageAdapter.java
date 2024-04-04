@@ -10,10 +10,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * description:
+ * 阿里云oss适配器
+ *
+ * @author: ChickenWing
+ * @date: 2023/10/14
  */
+public class AliStorageAdapter implements StorageAdapter {
 
-public class ALiStorageAdapter implements StorageAdapter {
     @Override
     public void createBucket(String bucket) {
 
@@ -50,4 +53,10 @@ public class ALiStorageAdapter implements StorageAdapter {
     public void deleteObject(String bucket, String objectName) {
 
     }
+
+    @Override
+    public String getUrl(String bucket, String objectName) {
+        return null;
+    }
+
 }

@@ -2,6 +2,7 @@ package com.hrd.subject.domain.service;
 
 import com.hrd.subject.common.entity.PageResult;
 import com.hrd.subject.domain.entity.SubjectInfoBO;
+import com.hrd.subject.infra.basic.entity.SubjectInfoEs;
 
 import java.util.List;
 
@@ -28,12 +29,13 @@ public interface SubjectInfoDomainService {
      */
     SubjectInfoBO querySubjectInfo(SubjectInfoBO subjectInfoBO);
 
-//    /**
-//     * 全文检索
-//     */
-//    PageResult<SubjectInfoEs> getSubjectPageBySearch(SubjectInfoBO subjectInfoBO);
-//
-//    List<SubjectInfoBO> getContributeList();
+
+    /**
+     * 全文检索
+     */
+    PageResult<SubjectInfoEs> getSubjectPageBySearch(SubjectInfoBO subjectInfoBO);
+
+    List<SubjectInfoBO> getContributeList();
 
 
 }

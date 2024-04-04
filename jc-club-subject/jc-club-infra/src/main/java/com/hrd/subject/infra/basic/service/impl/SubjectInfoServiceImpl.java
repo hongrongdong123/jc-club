@@ -77,4 +77,10 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
         List<SubjectInfo> list = this.subjectInfoDao.queryPage(subjectInfo, categoryId, labelId, start, pageSize);
         return list;
     }
+
+    @Override
+    public Long querySubjectIdCursor(Long subjectId, Long categoryId, Long labelId, int cursor) {
+        return this.subjectInfoDao.querySubjectIdCursor(subjectId, categoryId, labelId, cursor);
+    }
+
 }

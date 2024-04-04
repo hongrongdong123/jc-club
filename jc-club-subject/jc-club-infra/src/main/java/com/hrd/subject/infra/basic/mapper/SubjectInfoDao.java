@@ -86,5 +86,11 @@ public interface SubjectInfoDao {
                                 @Param("labelId")Long labelId,
                                 @Param("start") int start,
                                 @Param("pageSize") Integer pageSize);
+
+    Long querySubjectIdCursor(@Param("subjectId") Long subjectId,
+                              @Param("categoryId") Long categoryId,
+                              @Param("labelId") Long labelId,
+                              @Param("cursor") int cursor);
+
 }
 
