@@ -22,6 +22,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import java.net.URLClassLoader;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -90,6 +91,7 @@ public class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainSe
         subjectCategory.setIsDeleted(IsDeletedFlagEnum.DELETED.getCode());
         int count = subjectCategoryService.update(subjectCategory);
         return count > 0;
+
     }
 
     @SneakyThrows

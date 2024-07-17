@@ -14,7 +14,7 @@ spring:
         - id: auth
           uri: lb://jc-club-auth
           predicates:
-            - Path=/auth/**
+            - Path=/**
           filters:
             - StripPrefix=1
         - id: subject
@@ -28,7 +28,7 @@ spring:
     # Redis数据库索引（默认为0）
       database: 1
       # Redis服务器地址
-      host: 116.198.40.220
+      host: 192.168.18.128
       # Redis服务器连接端口
       port: 6379
       # Redis服务器连接密码（默认为空）

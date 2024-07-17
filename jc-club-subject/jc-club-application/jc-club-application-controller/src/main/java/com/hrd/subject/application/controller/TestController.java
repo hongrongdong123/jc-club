@@ -15,6 +15,7 @@ import com.hrd.subject.infra.rpc.UserRpc;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,7 +35,17 @@ public class TestController {
     private UserRpc userRpc;
 
     @Resource
+    private RocketMQTemplate rocketMQTemplate;
+
+    @Resource
     private SubjectEsService subjectEsService;
+
+
+    @GetMapping("testmq")
+    public String testMq() {
+        rocketMQTemplate.convertAndSend("first-topic", "hello world");
+        return "ok";
+    }
 
     @GetMapping("testfegin")
     public void testFegin() {

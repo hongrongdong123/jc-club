@@ -152,6 +152,9 @@ public class UserController {
             Preconditions.checkArgument(!StringUtils.isBlank(validCode), "验证码不能为空！");
             SaTokenInfo tokenInfo = authUserDomainService.doLogin(validCode);
             log.info("验证码：{}", validCode);
+            if (tokenInfo == null) {
+                throw new RuntimeException("验证码错误");
+            }
             return Result.ok(tokenInfo);
         } catch (Exception e) {
             log.error("UserController.doLogin.error:{}", e.getMessage(), e);
