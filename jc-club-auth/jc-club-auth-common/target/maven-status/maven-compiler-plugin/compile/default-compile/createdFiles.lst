@@ -1,0 +1,4 @@
+com\hrd\auth\common\entity\PageInfo.class
+com\hrd\auth\common\enums\AuthUserStatusEnum.class
+com\hrd\auth\common\enums\IsDeletedFlagEnum.class
+com\hrd\auth\common\entity\PageResult.class

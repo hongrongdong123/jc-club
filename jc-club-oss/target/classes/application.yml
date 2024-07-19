@@ -1,0 +1,11 @@
+server:
+  port: 4000
+
+minio:
+  url: http://116.198.40.220:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+
+#storage:
+#  service:
+#    type: aliyun

@@ -1,0 +1,16 @@
+com\hrd\auth\application\convert\AuthRoleDTOConverterImpl.class
+com\hrd\auth\application\config\GlobalConfig.class
+com\hrd\auth\application\convert\AuthUserDTOConverter.class
+com\hrd\auth\application\controller\PermissionController.class
+com\hrd\auth\application\controller\RolePermissionController.class
+com\hrd\auth\application\convert\AuthPermissionDTOConverter.class
+com\hrd\auth\application\dto\AuthPermissionDTO.class
+com\hrd\auth\application\convert\AuthPermissionDTOConverterImpl.class
+com\hrd\auth\application\convert\AuthRolePermissionDTOConverterImpl.class
+com\hrd\auth\application\controller\UserController.class
+com\hrd\auth\application\convert\AuthUserDTOConverterImpl.class
+com\hrd\auth\application\convert\AuthRoleDTOConverter.class
+com\hrd\auth\application\controller\RoleController.class
+com\hrd\auth\application\dto\AuthRoleDTO.class
+com\hrd\auth\application\convert\AuthRolePermissionDTOConverter.class
+com\hrd\auth\application\dto\AuthRolePermissionDTO.class
