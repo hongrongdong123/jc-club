@@ -34,5 +34,6 @@ public interface AuthUserDomainService {
     AuthUserBO getUserInfo(AuthUserBO authUserBO);
 
     SaTokenInfo doLogin(String validCode);
+    List<AuthUserBO> listUserInfoByIds(List<String> ids);
 }
 

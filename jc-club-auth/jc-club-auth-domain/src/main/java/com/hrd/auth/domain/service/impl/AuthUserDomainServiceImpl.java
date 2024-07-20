@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -156,4 +157,14 @@ public class AuthUserDomainServiceImpl implements AuthUserDomainService {
         SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
         return tokenInfo;
     }
+
+    @Override
+    public List<AuthUserBO> listUserInfoByIds(List<String> userNameList) {
+        List<AuthUser> userList = authUserService.listUserInfoByIds(userNameList);
+        if (CollectionUtils.isEmpty(userList)) {
+            return Collections.emptyList();
+        }
+        return AuthUserBOConverter.INSTANCE.convertEntityToBO(userList);
+    }
+
 }

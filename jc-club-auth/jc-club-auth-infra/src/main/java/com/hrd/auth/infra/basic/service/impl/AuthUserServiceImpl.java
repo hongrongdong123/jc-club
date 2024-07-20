@@ -75,4 +75,9 @@ public class AuthUserServiceImpl implements AuthUserService {
     }
 
 
+    @Override
+    public List<AuthUser> listUserInfoByIds(List<String> userNameList) {
+        return authUserDao.listUserInfoByIds(userNameList);
+    }
+
 }
